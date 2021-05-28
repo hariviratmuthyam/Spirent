@@ -1,0 +1,21 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} SPIRENT</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<nav>
+  <h1><a href="">SPIRENT</a></h1>
+  <ul>
+      <li><a href="{{ url_for('logout') }}">Log Out</a>
+      <li><a href="{{ url_for('signup') }}">SignUp</a>
+      <li><a href="{{ url_for('login') }}">Log In</a>
+
+  </ul>
+</nav>
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  {% for message in get_flashed_messages() %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+  {% block content %}{% endblock %}
+</section>

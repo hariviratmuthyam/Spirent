@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPIRENT</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style1.css') }}">
+</head>
+<body>
+    <div class="header">
+        <div class="inner-header">
+            <div class="logo">
+                <a href="" target="_blank">HOME</a>
+            </div> <!--End to .logo-->
+            <div class="header-link">
+                <a href="{{ url_for('logout') }}" target="_blank">Logout</a>
+            </div>
+        </div> <!--End to inner-header-->
+    </div> <!--End to header-->
+    <div class="content">
+       <form method="post">
+			<label for="username">Username</label>
+			<input name="username" id="username" required>
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" required>
+			<input type="submit" value="Log In">
+		</form>
+    </div>
+    <div class="container">
+        <div class="items">
+            <p>some news about spirent</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <p style="text-align:center"> Copyright SPIRENT: All Rights Reserved | </p>
+        </div>
+    </div>
+</body>
+</html>

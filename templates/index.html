@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPIRENT</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style1.css') }}">
+</head>
+<body>
+    <div class="header">
+        <div class="inner-header">
+            <div class="logo">
+                <a href="" target="_blank">HOME</a>
+            </div> <!--End to .logo-->
+            <div class="header-link">
+                <a href="{{ url_for('login') }}" target="_blank">Login</a>
+            </div>
+            <div class="header-link">
+                <a href="{{ url_for('signup') }}" target="_blank">SignUp</a>
+            </div>
+        </div> <!--End to inner-header-->
+    </div> <!--End to header-->
+    <div class="content">
+        <div class="banner-image">
+            <div class="inner-banner-image">
+                <div class="banner-content">
+                    <h1>WELCOME TO SPIRENT</h1>
+                </div> <!--end to banner content-->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="items">
+            <p>some news about spirent</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <p style="text-align:center"> Copyright SPIRENT: All Rights Reserved | </p>
+        </div>
+    </div>
+</body>
+</html>
